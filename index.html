@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 Smart Dashboard</h1>
+        <p>Track tasks, weather, and notes</p>
+    </header>
+
+    <section class="container">
+
+        <!-- TASK MANAGER -->
+        <div class="card">
+            <h2>📝 Task Manager</h2>
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="clearTasks()">Clear All</button>
+            <ul id="taskList"></ul>
+        </div>
+
+        <!-- NOTES -->
+        <div class="card">
+            <h2>📒 Notes</h2>
+            <textarea id="noteInput" placeholder="Write notes..."></textarea>
+            <button onclick="saveNote()">Save Note</button>
+            <div id="notesContainer"></div>
+        </div>
+
+        <!-- CLOCK -->
+        <div class="card">
+            <h2>⏰ Live Clock</h2>
+            <h1 id="clock"></h1>
+        </div>
+
+        <!-- COLOR THEME -->
+        <div class="card">
+            <h2>🎨 Change Theme</h2>
+            <button onclick="changeTheme('dark')">Dark</button>
+            <button onclick="changeTheme('light')">Light</button>
+            <button onclick="changeTheme('blue')">Blue</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Made for GitHub Contributions 💻</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
